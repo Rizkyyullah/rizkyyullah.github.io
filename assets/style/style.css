@@ -1,3 +1,88 @@
+:root {
+  --myWhite: #EBEBF0;
+  --myBlack: #141010;
+  --primary: #14b8a6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+header ul li a,
+header .logo p a {
+  color: var(--myBlack);
+  font-weight: 600;
+  font-size: 1.2em;
+  transition: .3s;
+}
+
+header ul li a:hover,
+header .logo p:hover a {
+  color: var(--primary);
+}
+
+header ul li a:hover span,
+header ul li.active a span {
+  width: 100%;
+}
+
+header ul li a:hover span,
+header ul li.active a span {
+  left: 0;
+}
+
 body {
+  background: var(--myWhite);
   font-family: 'Noto Sans', sans-serif;
+  letter-spacing: 1px;
+  color: var(--myBlack);
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  backdrop-filter: blur(5px);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 60px;
+}
+
+.logo img {
+  width: 50px;
+  background: var(--primary);
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li a {
+  margin: 0 20px;
+  position: relative;
+}
+
+header ul li a span {
+  height: 2px;
+  width: 0;
+  left: 50%;
+  bottom: -4px;
+  transition: all .3s;
+  display: block;
+  background-color: var(--primary);
+  position: absolute;
 }
