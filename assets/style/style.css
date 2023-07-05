@@ -195,6 +195,10 @@ header ul li a span {
   .hero .sambutan h1 {
     line-height: 40px;
   }
+
+  .hero img {
+    width: 370px;
+  }
 }
 
 @media (max-width: 800px) {
