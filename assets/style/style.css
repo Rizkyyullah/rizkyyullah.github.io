@@ -38,6 +38,11 @@ header ul li.active a span {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+section {
+  padding: 60px;
 }
 
 body {
@@ -144,7 +149,6 @@ header ul li a span {
   place-items: center;
   grid-template-columns: 1fr 1fr;
   background-attachment: fixed;
-  padding: 0 60px;
   /* min-height: 80rem;
   max-height: 120rem;
   position: relative; */
@@ -157,7 +161,7 @@ header ul li a span {
   margin-bottom: 10px;
 }
 
-.sambutan q {
+.hero .sambutan q {
   font-weight: 400;
   font-size: 1.2em;
   color: rgb(239, 232, 232);
@@ -173,10 +177,81 @@ header ul li a span {
   margin-top: 15px;
 }
 
+.hero .sambutan a {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  background: var(--myWhite);
+  color: var(--primary);
+  font-weight: 500;
+  margin-top: 20px;
+  transition: .3s;
+}
+
+.hero .sambutan a:hover {
+  box-shadow: 3px 3px rgba(20, 16, 16, .2);
+  transform: translateY(-2px);
+}
+
+#about {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+}
+
+.kiri {
+  padding-right: 25px;
+}
+
+#about span {
+  display: inline-block;
+  width: 15px;
+  height: 6px;
+  background: var(--primary);
+  border-radius: 20px;
+}
+
+#about .kiri span:first-child,
+#about .kanan span:first-child {
+  width: 50px;
+}
+
+#about .kiri span:nth-child(7),
+#about .kanan span:nth-child(7) {
+  width: 50px;
+}
+
+.social-icon {
+  margin-top: 20px;
+  display: flex;
+}
+
+.social-icon a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  transition: .3s;
+}
+
+.social-icon a:hover {
+  background: var(--primary);
+  fill: var(--myWhite);
+}
+
+
 
 /* Responsive Breakpoints */
+@media (max-width: 1000px) {
+  header ul li {
+    padding: 0 10px;
+  }
+}
+
 @media (max-width: 900px) {
-  header {
+  header,
+  section {
     padding: 30px 30px;
   }
 
@@ -309,6 +384,14 @@ header ul li a span {
   section.hero {
     grid-template-columns: 1fr;
     padding: 160px 15px 0;
+  }
+
+  #about {
+    grid-template-columns: 1fr;
+  }
+
+  .kanan {
+    margin-top: 60px;
   }
 }
 
