@@ -55,7 +55,6 @@ body {
   font-family: 'Noto Sans', sans-serif;
   letter-spacing: 1px;
   color: var(--myBlack);
-  height: 5000px;
   overflow-x: hidden;
 }
 
@@ -258,7 +257,9 @@ header ul li a span {
 #skills h2,
 #skills .motif,
 #projects .motif,
-#projects h2 {
+#projects h2,
+#contact h2,
+#contact .motif {
   text-align: center;
 }
 
@@ -471,6 +472,81 @@ header ul li a span {
   bottom: 0;
 }
 
+#contact {
+  display: grid;
+  place-items: center;
+}
+
+#contact form {
+  width: 50%;
+  /* max-width: 20em; */
+}
+
+#contact input,
+#contact textarea {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: .5em 0 1.2em;
+  background-color: var(--myWhite);
+  background-clip: padding-box;
+  border: 1px solid #dee2e6;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: .375rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #contact input,
+  #contact textarea {
+    transition: none;
+  }
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  background-color: var(--myWhite);
+  border-color: var(--primary);
+  outline: transparent;
+  box-shadow: 0 0 0 0.25rem rgba(20, 184, 166, .25);
+}
+
+.submit {
+  padding: .8rem 1.5rem;
+  background: var(--primary);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1rem;
+  transition: .3s;
+}
+
+.submit:hover {
+  box-shadow: 3px 3px rgba(20, 16, 16, .5);
+  transform: translateY(-2px);
+}
+
+footer {
+  width: 100%;
+  background: var(--primary);
+  text-align: center;
+  padding: 2rem;
+  color: var(--myWhite);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0, .3);
+}
+
+footer a {
+  color: var(--myWhite);
+  font-weight: 700;
+}
 
 /* Responsive Breakpoints */
 @media (max-width: 1000px) {
@@ -623,6 +699,10 @@ header ul li a span {
 
   .kanan {
     margin-top: 60px;
+  }
+
+  #contact form {
+    width: 80%;
   }
 }
 
