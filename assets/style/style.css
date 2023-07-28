@@ -43,14 +43,15 @@ html {
 
 section {
   padding: 60px;
+  width: 100%;
 }
 
 section:nth-child(odd) {
-  background: #dedede;
+  background: var(--myWhite);
 }
 
 body {
-  background: var(--myWhite);
+  background: #fff;
   font-family: 'Noto Sans', sans-serif;
   letter-spacing: 1px;
   color: var(--myBlack);
@@ -255,7 +256,9 @@ header ul li a span {
 }
 
 #skills h2,
-#skills .motif {
+#skills .motif,
+#projects .motif,
+#projects h2 {
   text-align: center;
 }
 
@@ -372,6 +375,101 @@ header ul li a span {
   content: '75%';
 }
 
+#projects .cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  /* position: relative; */
+  /* overflow: hidden; */
+  max-width: 24rem;
+  text-align: center;
+  /* display: flex; */
+  position: relative;
+  display: flex;
+  /* flex-direction: column; */
+  /* min-width: 0; */
+  color: #212529;
+  /* word-wrap: break-word; */
+  background-color: #fff;
+  /* background-clip: border-box; */
+  border-radius: 20px;
+  margin: 2.5em;
+}
+
+/* .card::before {
+  content: "Website Portfolio saya menggunakan Bootstrap v3";
+} */
+
+.card p {
+  /* position: absolute;
+  left: 0;
+  right: 0; */
+  font-size: .8em;
+  /* transform: translateY(-200px); */
+  margin-bottom: 17px;
+}
+
+.card-info a {
+  font-size: .8em;
+  color: var(--myWhite);
+  background: var(--primary);
+  padding: 10px;
+  border-radius: .5em;
+  transition: .3s;
+}
+
+.card-info a:hover {
+  box-shadow: 2px 2px rgb(20, 16, 16);
+}
+
+.card img {
+  width: 100%;
+  padding: 5px 5px 5px;
+  background: #fff;
+  border-radius: 10px;
+  transition: .3s;
+  z-index: 2;
+  /* cursor: zoom-in; */
+}
+
+.card img:hover {
+  opacity: .8;
+}
+
+.card.aktif .card-info {
+  /* padding-top: 1rem; */
+  opacity: 1;
+  transform: translateY(84%);
+  /* transform: translateY(0px); */
+  visibility: visible;
+  /* z-index: 2; */
+}
+
+.card-info {
+  /* width: 90%;
+  height: 90%;
+  background: red;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: .3s; */
+  /* position: relative; */
+  background: #fff;
+  border-radius: 0 0 10px 10px;
+  transition: .3s;
+  width: 100%;
+  /* margin: 0 auto; */
+  padding: 1rem;
+  opacity: 0;
+  /* transform: translateY(41px); */
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+}
 
 
 /* Responsive Breakpoints */

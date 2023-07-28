@@ -23,4 +23,25 @@ menuToggle.onclick = () => {
   header.classList.toggle('show');
 };
 
-// Tes
+// Projects On Hover
+const card = document.querySelectorAll(".card");
+const cardInfo = document.querySelectorAll(".card-info");
+for(let i = 0; i < card.length; i++) {
+  card[i].addEventListener("mousemove", () => {
+    card[i].classList.add("aktif")
+  })
+  card[i].addEventListener("mouseleave", () => {
+    card[i].classList.remove("aktif")
+  })
+}
+
+
+console.info(card.classList.contains("aktif"));
+
+// card.forEach(card =>
+//   card.addEventListener("click", () => {
+//       const arr = Array.from(card.parentElement.children);
+//       arr.forEach(card => card.classList.remove("aktif"));
+//       card.classList.add("aktif");
+//   })
+// );
