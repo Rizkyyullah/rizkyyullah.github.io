@@ -45,6 +45,10 @@ section {
   padding: 60px;
 }
 
+section:nth-child(odd) {
+  background: #dedede;
+}
+
 body {
   background: var(--myWhite);
   font-family: 'Noto Sans', sans-serif;
@@ -202,7 +206,7 @@ header ul li a span {
   padding-right: 25px;
 }
 
-#about span {
+.motif span {
   display: inline-block;
   width: 15px;
   height: 6px;
@@ -210,14 +214,16 @@ header ul li a span {
   border-radius: 20px;
 }
 
-#about .kiri span:first-child,
-#about .kanan span:first-child {
+.motif.atas span:first-child {
   width: 50px;
 }
 
-#about .kiri span:nth-child(7),
-#about .kanan span:nth-child(7) {
+.motif.bawah span:last-child {
   width: 50px;
+}
+
+.motif.bawah {
+  margin-bottom: 1rem;
 }
 
 .social-icon {
@@ -238,6 +244,132 @@ header ul li a span {
 .social-icon a:hover {
   background: var(--primary);
   fill: var(--myWhite);
+}
+
+/* #skill {} */
+#skills {
+  width: 100vw;
+  display: grid;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#skills h2,
+#skills .motif {
+  text-align: center;
+}
+
+#skills .bar {
+  margin: 20px 0;
+}
+
+#skills .bar:first-child {
+  margin-top: 0;
+}
+
+#skills .bar .info {
+  margin-bottom: 10px;
+}
+
+#skills .bar .progress-line {
+  position: relative;
+  height: 10px;
+  width: 80vw;
+  background: #d4d4d4;
+  transform: scaleX(0);
+  transform-origin: left;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .5),
+                    0 1px rgba(255, 255, 255, .8);
+  border-radius: 10px;
+  animation: animasi 1s cubic-bezier(1, 0, .5, 1) forwards;
+}
+
+#skills .bar .progress-line span {
+  height: 100%;
+  width: 80%;
+  background: var(--primary);
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animasi 1s 1s cubic-bezier(1, 0, .5, 1) forwards;
+}
+
+@keyframes animasi {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+#skills .bar .progress-line.html span {
+  width: 90%;
+}
+
+
+#skills .bar .progress-line.css span {
+  width: 85%;
+}
+
+
+#skills .bar .progress-line.js span {
+  width: 80%;
+}
+
+
+#skills .bar .progress-line.bootstrap span {
+  width: 85%;
+}
+
+
+#skills .bar .progress-line.nodejs span {
+  width: 75%;
+}
+
+#skills .bar .progress-line span::before {
+  position: absolute;
+  content: '';
+  right: 0;
+  top: -10px;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0;
+  border-right-width: 0;
+  border-top-color: #000;
+}
+
+#skills .bar .progress-line span::after {
+  position: absolute;
+  right: 0;
+  top: -29px;
+  color: var(--myWhite);
+  background: var(--myBlack);
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+
+.progress-line.html span::after {
+  content: '90%';
+}
+
+
+.progress-line.css span::after {
+  content: '85%';
+}
+
+
+.progress-line.js span::after {
+  content: '80%';
+}
+
+
+.progress-line.bootstrap span::after {
+  content: '85%';
+}
+
+
+.progress-line.nodejs span::after {
+  content: '75%';
 }
 
 
@@ -373,7 +505,8 @@ header ul li a span {
 }
 
 @media (max-width: 768px) {
-  header {
+  header,
+  section {
     padding: 30px 15px;
   }
   
