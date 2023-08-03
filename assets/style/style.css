@@ -98,7 +98,6 @@ header.sticky .logo p:hover a {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 0 60px; */
 }
 
 header .logo img {
@@ -129,7 +128,6 @@ header ul li {
 }
 
 header ul li a {
-  /* margin: 0 20px; */
   position: relative;
 }
 
@@ -153,9 +151,6 @@ header ul li a span {
   place-items: center;
   grid-template-columns: 1fr 1fr;
   background-attachment: fixed;
-  /* min-height: 80rem;
-  max-height: 120rem;
-  position: relative; */
 }
 
 .hero .sambutan h1 {
@@ -246,7 +241,6 @@ header ul li a span {
   fill: var(--myWhite);
 }
 
-/* #skill {} */
 #skills {
   width: 100vw;
   display: grid;
@@ -384,33 +378,19 @@ header ul li a span {
 }
 
 .card {
-  /* position: relative; */
-  /* overflow: hidden; */
   max-width: 24rem;
   text-align: center;
-  /* display: flex; */
   position: relative;
   display: flex;
-  /* flex-direction: column; */
-  /* min-width: 0; */
   color: #212529;
-  /* word-wrap: break-word; */
   background-color: #fff;
-  /* background-clip: border-box; */
   border-radius: 20px;
-  margin: 2.5em;
+  margin: 3em;
 }
 
-/* .card::before {
-  content: "Website Portfolio saya menggunakan Bootstrap v3";
-} */
 
 .card p {
-  /* position: absolute;
-  left: 0;
-  right: 0; */
   font-size: .8em;
-  /* transform: translateY(-200px); */
   margin-bottom: 17px;
 }
 
@@ -434,7 +414,6 @@ header ul li a span {
   border-radius: 10px;
   transition: .3s;
   z-index: 2;
-  /* cursor: zoom-in; */
 }
 
 .card img:hover {
@@ -442,31 +421,18 @@ header ul li a span {
 }
 
 .card.aktif .card-info {
-  /* padding-top: 1rem; */
   opacity: 1;
   transform: translateY(84%);
-  /* transform: translateY(0px); */
   visibility: visible;
-  /* z-index: 2; */
 }
 
 .card-info {
-  /* width: 90%;
-  height: 90%;
-  background: red;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  transition: .3s; */
-  /* position: relative; */
   background: #fff;
   border-radius: 0 0 10px 10px;
   transition: .3s;
   width: 100%;
-  /* margin: 0 auto; */
   padding: 1rem;
   opacity: 0;
-  /* transform: translateY(41px); */
   visibility: hidden;
   position: absolute;
   bottom: 0;
@@ -479,7 +445,6 @@ header ul li a span {
 
 #contact form {
   width: 50%;
-  /* max-width: 20em; */
 }
 
 #contact input,
