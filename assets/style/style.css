@@ -18,7 +18,7 @@ header .logo p a {
   color: var(--myWhite);
   font-weight: 600;
   font-size: 1.2em;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 header ul li a:hover,
@@ -52,7 +52,7 @@ section:nth-child(odd) {
 
 body {
   background: #fff;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   letter-spacing: 1px;
   color: var(--myBlack);
   overflow-x: hidden;
@@ -67,26 +67,26 @@ header {
   backdrop-filter: blur(5px);
   position: fixed;
   z-index: 10000;
-  transition: .6s;
+  transition: 0.6s;
   padding: 30px 60px;
   /* border-bottom: 1px solid red; */
 }
 
 header.sticky {
-  background: rgba(235, 235, 240, .8);
+  background: rgba(235, 235, 240, 0.8);
   padding: 10px 60px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, .2), 0 2px 5px rgba(255, 255, 255, .2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 2px 5px rgba(255, 255, 255, 0.2);
 }
 
 header.sticky ul li a,
 header.sticky .logo p a {
   color: var(--myBlack);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 header.sticky .logo img {
   background: var(--primary600);
-  transition: .6s;
+  transition: 0.6s;
 }
 
 header.sticky ul li a:hover,
@@ -105,7 +105,7 @@ header .logo img {
   background: var(--myWhite);
   border-radius: 50%;
   margin-right: 20px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 header .logo img:hover {
@@ -120,7 +120,7 @@ header ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: .6s;
+  transition: 0.6s;
 }
 
 header ul li {
@@ -136,7 +136,7 @@ header ul li a span {
   width: 0;
   left: 50%;
   bottom: -4px;
-  transition: all .3s;
+  transition: all 0.3s;
   display: block;
   background: var(--primary600);
   position: absolute;
@@ -144,7 +144,12 @@ header ul li a span {
 
 .hero {
   color: var(--myWhite);
-  background: linear-gradient(to right, rgba(20, 184, 166, 0.8), rgba(20, 184, 166, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(
+      to right,
+      rgba(20, 184, 166, 0.8),
+      rgba(20, 184, 166, 0.8)
+    ),
+    url(../../assets/svg/common-bg.svg);
   background-position: center;
   min-height: 100vh;
   display: grid;
@@ -168,8 +173,8 @@ header ul li a span {
 
 .hero .sambutan h1,
 .hero .sambutan q {
-  text-shadow: 1px 1px 3px rgba(20, 16, 16, .5);
-} 
+  text-shadow: 1px 1px 3px rgba(20, 16, 16, 0.5);
+}
 
 .hero img {
   width: 400px;
@@ -184,17 +189,17 @@ header ul li a span {
   color: var(--primary);
   font-weight: 500;
   margin-top: 20px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .hero .sambutan a:hover {
-  box-shadow: 3px 3px rgba(20, 16, 16, .2);
+  box-shadow: 3px 3px rgba(20, 16, 16, 0.2);
   transform: translateY(-2px);
 }
 
 #about {
   display: grid;
-  grid-template-columns: 1.2fr .8fr;
+  grid-template-columns: 1.2fr 0.8fr;
 }
 
 .kiri {
@@ -233,7 +238,7 @@ header ul li a span {
   width: 41px;
   height: 41px;
   border-radius: 50%;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .social-icon a:hover {
@@ -276,10 +281,9 @@ header ul li a span {
   background: #d4d4d4;
   transform: scaleX(0);
   transform-origin: left;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .5),
-                    0 1px rgba(255, 255, 255, .8);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5), 0 1px rgba(255, 255, 255, 0.8);
   border-radius: 10px;
-  animation: animasi 1s cubic-bezier(1, 0, .5, 1) forwards;
+  animation: animasi 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
 #skills .bar .progress-line span {
@@ -290,7 +294,7 @@ header ul li a span {
   border-radius: 10px;
   transform: scaleX(0);
   transform-origin: left;
-  animation: animasi 1s 1s cubic-bezier(1, 0, .5, 1) forwards;
+  animation: animasi 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
 @keyframes animasi {
@@ -303,29 +307,29 @@ header ul li a span {
   width: 90%;
 }
 
-
 #skills .bar .progress-line.css span {
   width: 85%;
 }
-
 
 #skills .bar .progress-line.js span {
   width: 80%;
 }
 
-
 #skills .bar .progress-line.bootstrap span {
   width: 85%;
 }
-
 
 #skills .bar .progress-line.nodejs span {
   width: 75%;
 }
 
+#skills .bar .progress-line.postgres span {
+  width: 70%;
+}
+
 #skills .bar .progress-line span::before {
   position: absolute;
-  content: '';
+  content: "";
   right: 0;
   top: -10px;
   height: 0;
@@ -347,27 +351,31 @@ header ul li a span {
 }
 
 .progress-line.html span::after {
-  content: '90%';
+  content: "90%";
 }
-
 
 .progress-line.css span::after {
-  content: '85%';
+  content: "85%";
 }
-
 
 .progress-line.js span::after {
-  content: '80%';
+  content: "80%";
 }
-
 
 .progress-line.bootstrap span::after {
-  content: '85%';
+  content: "85%";
 }
 
-
 .progress-line.nodejs span::after {
-  content: '75%';
+  content: "75%";
+}
+
+.progress-line.postgres span::after {
+  content: "70%";
+}
+
+.progress-line.go span::after {
+  content: "80%";
 }
 
 #projects .cards {
@@ -385,22 +393,21 @@ header ul li a span {
   color: #212529;
   background-color: #fff;
   border-radius: 20px;
-  margin: 3em;
+  margin: 4em 3em;
 }
 
-
 .card p {
-  font-size: .8em;
+  font-size: 0.8em;
   margin-bottom: 17px;
 }
 
 .card-info a {
-  font-size: .8em;
+  font-size: 0.8em;
   color: var(--myWhite);
   background: var(--primary);
   padding: 10px;
-  border-radius: .5em;
-  transition: .3s;
+  border-radius: 0.5em;
+  transition: 0.3s;
 }
 
 .card-info a:hover {
@@ -412,12 +419,12 @@ header ul li a span {
   padding: 5px 5px 5px;
   background: #fff;
   border-radius: 10px;
-  transition: .3s;
+  transition: 0.3s;
   z-index: 2;
 }
 
 .card img:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .card.aktif .card-info {
@@ -429,7 +436,7 @@ header ul li a span {
 .card-info {
   background: #fff;
   border-radius: 0 0 10px 10px;
-  transition: .3s;
+  transition: 0.3s;
   width: 100%;
   padding: 1rem;
   opacity: 0;
@@ -456,14 +463,14 @@ header ul li a span {
   font-family: inherit;
   font-weight: 400;
   line-height: 1.5;
-  margin: .5em 0 1.2em;
+  margin: 0.5em 0 1.2em;
   background-color: var(--myWhite);
   background-clip: padding-box;
   border: 1px solid #dee2e6;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: .375rem;
+  border-radius: 0.375rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -479,11 +486,11 @@ header ul li a span {
   background-color: var(--myWhite);
   border-color: var(--primary);
   outline: transparent;
-  box-shadow: 0 0 0 0.25rem rgba(20, 184, 166, .25);
+  box-shadow: 0 0 0 0.25rem rgba(20, 184, 166, 0.25);
 }
 
 .submit {
-  padding: .8rem 1.5rem;
+  padding: 0.8rem 1.5rem;
   background: var(--primary);
   outline: none;
   border: none;
@@ -491,11 +498,11 @@ header ul li a span {
   cursor: pointer;
   color: #fff;
   font-size: 1rem;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .submit:hover {
-  box-shadow: 3px 3px rgba(20, 16, 16, .5);
+  box-shadow: 3px 3px rgba(20, 16, 16, 0.5);
   transform: translateY(-2px);
 }
 
@@ -505,7 +512,7 @@ footer {
   text-align: center;
   padding: 2rem;
   color: var(--myWhite);
-  text-shadow: 1px 1px 1px rgb(0, 0, 0, .3);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.3);
 }
 
 footer a {
@@ -557,10 +564,10 @@ footer a {
     width: 50%;
     background: var(--myWhite);
     backdrop-filter: blur(5px);
-    box-shadow: 0 0 7px rgba(20, 16, 16, .2);
+    box-shadow: 0 0 7px rgba(20, 16, 16, 0.2);
   }
 
-  header ul li  {
+  header ul li {
     margin-bottom: 50px;
     width: 140px;
   }
@@ -576,7 +583,7 @@ footer a {
   header ul li:last-child {
     margin-bottom: 100vh;
   }
-  
+
   header ul li a {
     position: absolute;
     left: 0;
@@ -606,26 +613,26 @@ footer a {
     justify-content: center;
     align-items: center;
   }
-  
+
   .menu-toggle::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: 3px;
     background: var(--myWhite);
     transform: translateY(-12px);
     box-shadow: 0 12px var(--myWhite);
-    transition: .3s;
+    transition: 0.3s;
   }
 
   .menu-toggle::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: 3px;
     background: var(--myWhite);
     transform: translateY(12px);
-    transition: .3s;
+    transition: 0.3s;
   }
 
   header.show .menu-toggle::before {
@@ -648,11 +655,11 @@ footer a {
   section {
     padding: 30px 15px;
   }
-  
+
   header.sticky {
     padding: 10px 15px;
   }
-  
+
   section.hero {
     grid-template-columns: 1fr;
     padding: 160px 15px 0;
