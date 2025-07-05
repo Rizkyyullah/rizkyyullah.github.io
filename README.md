@@ -61,7 +61,7 @@ To run this project locally:
 
 ## 📈 Future Enhancements
 
-- [ ] Implement functional contact form
+- [ ✅ ] Implement functional contact form
 - [ ✅ ] Add live project deployment links
 - [ ] Integrate blog section
 - [ ] Add dark/light theme toggle

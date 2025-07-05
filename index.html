@@ -208,7 +208,20 @@
       <span></span>
       <span></span>
     </div>
-    <form action="" method="POST">
+
+    <div id="alertOverlay" class="alert-overlay">
+      <div id="alertBox" class="alert-box">
+          <span id="alertIcon" class="alert-icon">✓</span>
+          <div id="alertTitle" class="alert-title"></div>
+          <div id="alertMessage" class="alert-message"></div>
+          <div class="alert-buttons">
+              <button id="alertOkBtn" class="alert-btn alert-btn-primary" onclick="hideAlert()">OK</button>
+              <button id="alertCancelBtn" class="alert-btn alert-btn-secondary" onclick="hideAlert()" style="display: none;">Cancel</button>
+          </div>
+      </div>
+    </div>
+    
+    <form method="POST" name="rizkyyullah-contact-form">
       <ul>
         <li>
           <label for="nama">Nama :</label>
@@ -223,7 +236,7 @@
           <textarea name="pesan" id="pesan" rows="5" placeholder="Kirimkan Pesan..." autocomplete="off" required></textarea>
         </li>
         <li>
-          <button type="submit" class="submit">Kirim</button>
+          <button type="submit" class="submit"><span class="button-text">Kirim</span></button>
         </li>
       </ul>
     </form>
