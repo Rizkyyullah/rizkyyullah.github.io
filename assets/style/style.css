@@ -429,7 +429,7 @@ header ul li a span {
 
 .card.aktif .card-info {
   opacity: 1;
-  transform: translateY(84%);
+  transform: translateY(90%);
   visibility: visible;
 }
 
@@ -837,8 +837,12 @@ footer a {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 460px) {
   .hero img {
     width: 80%;
+  }
+
+  .card {
+    margin: 4.8rem 3rem;
   }
 }
