@@ -1,0 +1,29 @@
+{
+  "name": "rizkyyullah.github.io",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npx @tailwindcss/cli -i ./src/style.css -o ./public/assets/style/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rizkyyullah/rizkyyullah.github.io.git"
+  },
+  "keywords": [
+    "Portfolio",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Tailwindcss"
+  ],
+  "author": "Muhamad Ali Rizkyyullah Ibnu Asy'ad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rizkyyullah/rizkyyullah.github.io/issues"
+  },
+  "homepage": "https://github.com/Rizkyyullah/rizkyyullah.github.io#readme",
+  "description": "My new look Portfolio",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  }
+}

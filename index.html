@@ -1,19 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./public/assets/style/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="font-crimson-text bg-primary text-main overflow-x-hidden leading-6"
+  >
+    <section
+      id="loader"
+      class="fixed top-0 left-0 w-full h-full bg-linear-to-br from-[#0a0a0a] via-[#1a1a2e] to-[#16213e] flex justify-center items-center z-[1000] duration-500 ease-in-out"
+    >
+      <div class="animus-logo text-center animate-animusGlow">
+        <i class="fa-solid fa-eye text-7xl text-animus mb-4 block"></i>
+        <div class="font-cinzel text-2xl text-accent">
+          Initializing Portfolio...
+        </div>
+      </div>
+    </section>
 
-  <!-- My Style -->
-  <link rel="stylesheet" href="assets/style/style.css">
-
-  <!-- Google Fonts - Noto Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-</head>
-<body>
-  <h1>Test</h1>
-</body>
+    <script src="./public/assets/script/index.js"></script>
+  </body>
 </html>
