@@ -5,11 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./public/assets/style/style.css" rel="stylesheet" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,17 +14,17 @@
       rel="stylesheet" />
   </head>
   <body
-    class="font-crimson-text bg-primary text-main overflow-x-hidden leading-6">
-    <!-- <section
+    class="font-crimson-text bg-primary text-main overflow-x-hidden leading-[1.6]">
+    <section
       id="loader"
       class="fixed top-0 left-0 z-[10000] flex h-full w-full items-center justify-center bg-linear-to-br from-[#0a0a0a] via-[#1a1a2e] to-[#16213e] duration-500 ease-in-out">
-      <div class="animus-logo animate-animusGlow text-center">
-        <i class="fa-solid fa-eye text-animus mb-4 block text-7xl"></i>
+      <div class="animate-animusGlow text-center">
+        <i class="fas fa-eye text-animus mb-4 block text-7xl"></i>
         <div class="font-cinzel text-accent text-2xl after:ml-0.5">
           Initializing Portfolio...
         </div>
       </div>
-    </section> -->
+    </section>
 
     <nav
       class="bg-[rgba(26, 26, 26, .95)] border-accent fixed top-0 left-0 z-[1000] w-full border-b-2 py-4 backdrop-blur-md">
@@ -40,7 +37,7 @@
           ><img src="./public/assets/img/foto.png" alt="My Photo" class="w-12"
         /></a>
         <ul
-          class="max-md:bg-secondary flex list-none gap-8 group-[.active]:left-0 max-[1000px]:gap-4 max-md:fixed max-md:top-[70px] max-md:-left-full max-md:h-lvh max-md:w-full max-md:flex-col max-md:py-8 max-md:text-center max-md:duration-300">
+          class="max-md:bg-secondary flex list-none gap-8 group-[.active]:top-[102%] group-[.active]:left-0 max-[1000px]:gap-4 max-md:fixed max-md:top-[102%] max-md:-left-full max-md:h-lvh max-md:w-full max-md:flex-col max-md:py-8 max-md:text-center max-md:duration-300">
           <li>
             <a
               href="#home"
@@ -101,14 +98,55 @@
         </ul>
         <div id="hamburger" class="hidden cursor-pointer flex-col max-md:flex">
           <span
-            class="bg-accent my-1 h-[3px] w-7 duration-300 [.active_&]:my-0 [.active_&]:rotate-45"></span
+            class="bg-accent my-1 h-[3px] w-7 duration-300 [.active_&]:my-0 [.active_&]:rotate-45 before:[.active_&]:rotate-45 before:[.active_&]:shadow-none"></span
           ><span
-            class="bg-accent my-1 h-[3px] w-7 duration-300 [.active_&]:hidden"></span
+            class="bg-accent my-1 h-[3px] w-7 duration-300 [.active_&]:absolute [.active_&]:scale-0 [.active_&]:opacity-0"></span
           ><span
-            class="bg-accent my-1 h-[3px] w-7 duration-300 [.active_&]:my-[-3px] [.active_&]:-rotate-45"></span>
+            class="bg-accent my-1 h-[3px] w-7 duration-300 [.active_&]:my-[-3px] [.active_&]:-rotate-45 after:[.active_&]:-rotate-45"></span>
         </div>
       </div>
     </nav>
+
+    <section
+      id="home"
+      class="relative flex h-lvh items-center justify-center overflow-hidden bg-cover bg-fixed bg-[center_10%] text-center">
+      <div>
+        <h1
+          class="glitch font-cinzel text-accent shadow-[2px_2px_4px_rgba(0, 0, 0, .8)] animate-glitch before:animate-glitch-2 before:text-animus after:animate-glitch-3 after:text-blood relative mb-4 px-4 text-5xl font-bold tracking-[3px] before:-z-[1] before:px-4 after:-z-[2] after:px-4 max-md:text-4xl"
+          data-text="MUHAMAD ALI RIZKYYULLAH IBNU ASY'AD">
+          MUHAMAD ALI RIZKYYULLAH IBNU ASY'AD
+        </h1>
+        <div
+          class="text-main text-shadow-animus text-2xl tracking-[2px] text-shadow-md">
+          WEB DEVELOPER
+        </div>
+        <p class="text-main m-8 text-center text-2xl italic">
+          "The people should not fear their government. The government should
+          fear their people."
+        </p>
+        <div
+          class="mt-8 flex justify-center gap-4 max-md:flex-col max-md:items-center">
+          <a
+            href="#projects"
+            class="border-accent font-cinzel hover:text-accent bg-accent text-primary relative overflow-hidden border-2 px-8 py-3 text-[.9rem] tracking-[1px] no-underline transition-all duration-300 ease-in-out hover:bg-transparent"
+            >VIEW PROJECTS</a
+          >
+          <a
+            href="#"
+            class="border-accent text-accent font-cinzel hover:text-primary relative overflow-hidden border-2 px-8 py-3 text-[.9rem] tracking-[1px] no-underline transition-all duration-300 ease-in-out"
+            >DOWNLOAD CV</a
+          >
+        </div>
+      </div>
+      <div
+        class="pointer-events-none absolute top-[15%] right-[15%] text-[3rem] opacity-10 max-md:right-[10%]">
+        <i class="fas fa-user-secret"></i>
+      </div>
+      <div
+        class="pointer-events-none absolute bottom-[15%] left-[15%] text-[3rem] opacity-10 max-md:bottom-[10%] max-md:left-[10%]">
+        <i class="fas fa-code"></i>
+      </div>
+    </section>
 
     <script src="./public/assets/script/index.js"></script>
   </body>
