@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -9,29 +9,106 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
       integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
   </head>
   <body
-    class="font-crimson-text bg-primary text-main overflow-x-hidden leading-6"
-  >
-    <section
+    class="font-crimson-text bg-primary text-main overflow-x-hidden leading-6">
+    <!-- <section
       id="loader"
-      class="fixed top-0 left-0 w-full h-full bg-linear-to-br from-[#0a0a0a] via-[#1a1a2e] to-[#16213e] flex justify-center items-center z-[1000] duration-500 ease-in-out"
-    >
-      <div class="animus-logo text-center animate-animusGlow">
-        <i class="fa-solid fa-eye text-7xl text-animus mb-4 block"></i>
-        <div class="font-cinzel text-2xl text-accent">
+      class="fixed top-0 left-0 z-[10000] flex h-full w-full items-center justify-center bg-linear-to-br from-[#0a0a0a] via-[#1a1a2e] to-[#16213e] duration-500 ease-in-out">
+      <div class="animus-logo animate-animusGlow text-center">
+        <i class="fa-solid fa-eye text-animus mb-4 block text-7xl"></i>
+        <div class="font-cinzel text-accent text-2xl after:ml-0.5">
           Initializing Portfolio...
         </div>
       </div>
-    </section>
+    </section> -->
+
+    <nav
+      class="bg-[rgba(26, 26, 26, .95)] border-accent fixed top-0 left-0 z-[1000] w-full border-b-2 py-4 backdrop-blur-md">
+      <div
+        id="menu"
+        class="group m-auto flex max-w-[1200px] items-center justify-between px-8">
+        <a
+          href="#"
+          class="font-cinzel bg-primary text-accent hover:bg-accent rounded-[50%] text-2xl font-bold duration-300 ease-in-out"
+          ><img src="./public/assets/img/foto.png" alt="My Photo" class="w-12"
+        /></a>
+        <ul
+          class="max-md:bg-secondary flex list-none gap-8 group-[.active]:left-0 max-[1000px]:gap-4 max-md:fixed max-md:top-[70px] max-md:-left-full max-md:h-lvh max-md:w-full max-md:flex-col max-md:py-8 max-md:text-center max-md:duration-300">
+          <li>
+            <a
+              href="#home"
+              class="text-main font-cinzel hover:text-accent after:bg-accent relative text-[.9rem] tracking-[1px] no-underline transition-colors duration-300 ease-in-out after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:transition-[width] after:duration-300 after:ease-in-out after:content-[''] hover:after:w-full max-[1000px]:text-[.8rem]"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="text-main font-cinzel hover:text-accent after:bg-accent relative text-[.9rem] tracking-tight transition-[color] duration-300 ease-in-out after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:transition-[width] after:duration-300 after:ease-in-out after:content-[''] hover:after:w-full max-[1000px]:text-[.8rem]"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#projects"
+              class="text-main font-cinzel hover:text-accent after:bg-accent relative text-[.9rem] tracking-tight transition-[color] duration-300 ease-in-out after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:transition-[width] after:duration-300 after:ease-in-out after:content-[''] hover:after:w-full max-[1000px]:text-[.8rem]"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="#skills"
+              class="text-main font-cinzel hover:text-accent after:bg-accent relative text-[.9rem] tracking-tight transition-[color] duration-300 ease-in-out after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:transition-[width] after:duration-300 after:ease-in-out after:content-[''] hover:after:w-full max-[1000px]:text-[.8rem]"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a
+              href="#certificates"
+              class="text-main font-cinzel hover:text-accent after:bg-accent relative text-[.9rem] tracking-tight transition-[color] duration-300 ease-in-out after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:transition-[width] after:duration-300 after:ease-in-out after:content-[''] hover:after:w-full max-[1000px]:text-[.8rem]"
+              >Certificates</a
+            >
+          </li>
+          <li>
+            <a
+              href="#testimonials"
+              class="text-main font-cinzel hover:text-accent after:bg-accent relative text-[.9rem] tracking-tight transition-[color] duration-300 ease-in-out after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:transition-[width] after:duration-300 after:ease-in-out after:content-[''] hover:after:w-full max-[1000px]:text-[.8rem]"
+              >Testimonials</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="text-main font-cinzel hover:text-accent after:bg-accent relative text-[.9rem] tracking-tight transition-[color] duration-300 ease-in-out after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:transition-[width] after:duration-300 after:ease-in-out after:content-[''] hover:after:w-full max-[1000px]:text-[.8rem]"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              id="btn-cv"
+              class="text-main font-cinzel hover:text-accent after:bg-accent relative text-[.9rem] tracking-tight transition-[color] duration-300 ease-in-out after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:transition-[width] after:duration-300 after:ease-in-out after:content-[''] hover:after:w-full max-[1000px]:text-[.8rem]"
+              >Download CV</a
+            >
+          </li>
+        </ul>
+        <div id="hamburger" class="hidden cursor-pointer flex-col max-md:flex">
+          <span
+            class="bg-accent my-1 h-[3px] w-7 duration-300 [.active_&]:my-0 [.active_&]:rotate-45"></span
+          ><span
+            class="bg-accent my-1 h-[3px] w-7 duration-300 [.active_&]:hidden"></span
+          ><span
+            class="bg-accent my-1 h-[3px] w-7 duration-300 [.active_&]:my-[-3px] [.active_&]:-rotate-45"></span>
+        </div>
+      </div>
+    </nav>
 
     <script src="./public/assets/script/index.js"></script>
   </body>
