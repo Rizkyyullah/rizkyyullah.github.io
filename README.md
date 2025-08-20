@@ -4,7 +4,7 @@ Welcome to my personal portfolio website! This project showcases my journey as a
 
 ## 🚀 Live Demo
 
-Visit my portfolio: [https://rizkyyullah.github.io](https://rizkyyullah.github.io)
+Visit my portfolio: [https://rizkyyullah.online](https://rizkyyullah.online)
 
 ## 📋 About This Project
 
