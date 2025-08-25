@@ -1,9 +1,13 @@
 <!doctype html>
-<html class="scroll-smooth">
+<html class="overflow-x-hidden scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./public/assets/style/style.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="public/assets/images/logo/logo.webp"
+      type="image/webp" />
+    <link href="./public/style/style.css" rel="stylesheet" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet" />
@@ -13,18 +17,17 @@
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
       rel="stylesheet" />
   </head>
-  <body
-    class="font-crimson-text bg-primary text-main overflow-x-hidden leading-[1.6]">
-    <!-- <section
+  <body class="font-crimson-text bg-primary text-main leading-[1.6]">
+    <section
       id="loader"
       class="fixed top-0 left-0 z-[10000] flex h-full w-full items-center justify-center bg-linear-to-br from-[#0a0a0a] via-[#1a1a2e] to-[#16213e] duration-500 ease-in-out">
       <div class="animate-animusGlow text-center">
         <i class="fas fa-eye text-animus mb-4 block text-7xl"></i>
         <div class="font-cinzel text-accent text-2xl after:ml-0.5">
-          Initializing Portfolio...
+          Initializing Portfolio ...
         </div>
       </div>
-    </section> -->
+    </section>
 
     <nav
       class="bg-[rgba(26, 26, 26, .95)] border-accent fixed top-0 left-0 z-[1000] w-full border-b-2 py-4 backdrop-blur-md">
@@ -34,66 +37,36 @@
         <a
           href="#"
           class="font-cinzel bg-primary text-accent hover:bg-accent rounded-[50%] text-2xl font-bold duration-300 ease-in-out"
-          ><img src="./public/assets/img/foto.png" alt="My Photo" class="w-12"
+          ><img
+            src="./public/assets/images/header/photo.png"
+            alt="My Photo"
+            class="w-12"
         /></a>
         <ul
-          class="max-md:bg-secondary flex list-none gap-8 group-[.active]:top-[102%] group-[.active]:left-0 max-[1000px]:gap-4 max-md:fixed max-md:top-[102%] max-md:-left-full max-md:h-lvh max-md:w-full max-md:flex-col max-md:overflow-y-scroll max-md:py-8 max-md:text-center max-md:leading-12 max-md:duration-300">
+          class="max-md:bg-secondary flex list-none gap-8 group-[.active]:top-[102%] group-[.active]:left-0 max-[1000px]:gap-4 max-md:fixed max-md:top-[102%] max-md:-left-full max-md:h-dvh max-md:w-full max-md:flex-col max-md:overflow-y-scroll max-md:py-8 max-md:text-center max-md:leading-12 max-md:duration-300">
           <li>
-            <a
-              href="#home"
-              class="text-main font-cinzel hover:text-accent after:bg-accent relative text-[.8rem] tracking-tight transition-[color] duration-300 ease-in-out after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:transition-[width] after:duration-300 after:ease-in-out after:content-[''] hover:after:w-full lg:text-[1rem]"
-              >Home</a
-            >
+            <a href="#home" class="nav-link">Home</a>
           </li>
           <li>
-            <a
-              href="#about"
-              class="text-main font-cinzel hover:text-accent after:bg-accent relative text-[.8rem] tracking-tight transition-[color] duration-300 ease-in-out after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:transition-[width] after:duration-300 after:ease-in-out after:content-[''] hover:after:w-full lg:text-[1rem]"
-              >About</a
-            >
+            <a href="#about" class="nav-link">About</a>
           </li>
           <li>
-            <a
-              href="#projects"
-              class="text-main font-cinzel hover:text-accent after:bg-accent relative text-[.8rem] tracking-tight transition-[color] duration-300 ease-in-out after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:transition-[width] after:duration-300 after:ease-in-out after:content-[''] hover:after:w-full lg:text-[1rem]"
-              >Projects</a
-            >
+            <a href="#projects" class="nav-link">Projects</a>
           </li>
           <li>
-            <a
-              href="#skills"
-              class="text-main font-cinzel hover:text-accent after:bg-accent relative text-[.8rem] tracking-tight transition-[color] duration-300 ease-in-out after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:transition-[width] after:duration-300 after:ease-in-out after:content-[''] hover:after:w-full lg:text-[1rem]"
-              >Skills</a
-            >
+            <a href="#skills" class="nav-link">Skills</a>
           </li>
           <li>
-            <a
-              href="#certificates"
-              class="text-main font-cinzel hover:text-accent after:bg-accent relative text-[.8rem] tracking-tight transition-[color] duration-300 ease-in-out after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:transition-[width] after:duration-300 after:ease-in-out after:content-[''] hover:after:w-full lg:text-[1rem]"
-              >Certificates</a
-            >
+            <a href="#certificates" class="nav-link">Certificates</a>
           </li>
           <li>
-            <a
-              href="#testimonials"
-              class="text-main font-cinzel hover:text-accent after:bg-accent relative text-[.8rem] tracking-tight transition-[color] duration-300 ease-in-out after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:transition-[width] after:duration-300 after:ease-in-out after:content-[''] hover:after:w-full lg:text-[1rem]"
-              >Testimonials</a
-            >
+            <a href="#testimonials" class="nav-link">Testimonials</a>
           </li>
           <li>
-            <a
-              href="#contact"
-              class="text-main font-cinzel hover:text-accent after:bg-accent relative text-[.8rem] tracking-tight transition-[color] duration-300 ease-in-out after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:transition-[width] after:duration-300 after:ease-in-out after:content-[''] hover:after:w-full lg:text-[1rem]"
-              >Contact</a
-            >
+            <a href="#contact" class="nav-link">Contact</a>
           </li>
           <li>
-            <a
-              href="#"
-              id="btn-cv"
-              class="text-main font-cinzel hover:text-accent after:bg-accent relative text-[.8rem] tracking-tight transition-[color] duration-300 ease-in-out after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:transition-[width] after:duration-300 after:ease-in-out after:content-[''] hover:after:w-full lg:text-[1rem]"
-              >Download CV</a
-            >
+            <a href="#" id="btn-cv" class="nav-link">Download CV</a>
           </li>
         </ul>
         <div id="hamburger" class="hidden cursor-pointer flex-col max-md:flex">
@@ -109,7 +82,7 @@
 
     <section
       id="home"
-      class="relative flex h-lvh items-center justify-center overflow-hidden bg-cover bg-fixed bg-[center_10%] text-center">
+      class="relative flex h-dvh w-full items-center justify-center overflow-hidden bg-cover bg-fixed bg-[center_10%] px-0 text-center">
       <div>
         <h1
           class="glitch font-cinzel text-accent shadow-[2px_2px_4px_rgba(0, 0, 0, .8)] animate-glitch before:animate-glitch-2 before:text-animus after:animate-glitch-3 after:text-blood relative mb-4 px-4 text-5xl font-bold tracking-[3px] before:-z-[1] before:px-4 after:-z-[2] after:px-4 max-md:text-4xl"
@@ -133,7 +106,7 @@
           >
           <a
             href="#"
-            class="border-accent text-accent font-cinzel hover:text-primary relative overflow-hidden border-2 px-8 py-3 text-[.9rem] font-bold tracking-[1px] no-underline transition-all duration-300 ease-in-out"
+            class="border-accent text-accent font-cinzel hover:bg-accent hover:text-primary relative overflow-hidden border-2 px-8 py-3 text-[.9rem] font-bold tracking-[1px] no-underline transition-all duration-300 ease-in-out"
             >DOWNLOAD CV</a
           >
         </div>
@@ -148,11 +121,8 @@
       </div>
     </section>
 
-    <section id="about" class="mx-auto max-w-[1200px] px-8 py-20">
-      <h2
-        class="font-cinzel text-accent after:bg-accent relative mb-12 text-center text-3xl font-bold after:absolute after:-bottom-2.5 after:left-2/4 after:h-0.5 after:w-[100px] after:-translate-x-2/4 after:content-[''] md:text-5xl">
-        About Me
-      </h2>
+    <section id="about">
+      <h2>About Me</h2>
       <div
         class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:items-start">
         <div class="text-center">
@@ -197,151 +167,136 @@
       </div>
     </section>
 
-    <section id="projects" class="mx-auto max-w-[1200px] px-8 py-20">
-      <h2
-        class="font-cinzel text-accent after:bg-accent relative mb-12 text-center text-3xl font-bold after:absolute after:-bottom-2.5 after:left-2/4 after:h-0.5 after:w-[100px] after:-translate-x-2/4 after:content-[''] md:text-5xl">
-        Project Sequences
-      </h2>
+    <section id="projects">
+      <h2>Project Sequences</h2>
       <div class="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2">
         <div
           class="bg-secondary border-accent relative overflow-hidden border-2 p-8 duration-300 ease-in-out before:absolute before:top-0 before:-left-full before:h-full before:w-full before:bg-linear-90 before:from-transparent before:via-[#c9aa711a] before:to-transparent before:transition-[left] before:duration-500 before:ease-in-out before:content-[''] hover:-translate-y-[5px] hover:before:left-full">
-          <h3 class="text-accent font-cinzel text-2xl font-bold">
-            Project Luna (Monthly Expense Tracker)
-          </h3>
-          <div
-            class="bg-rotate my-4 flex items-center justify-center sm:w-1/2 lg:w-3/4">
+          <h3>Project Luna (Monthly Expense Tracker)</h3>
+          <div class="project bg-rotate">
             <p class="text-secondary absolute z-[1] text-sm font-bold">
               Monthly Expense Tracker Image
             </p>
             <img
               src="./public/assets/images/projects/1.png"
               alt="Monthly Expense Tracker"
-              class="z-[2] cursor-pointer object-cover p-1 duration-300 ease-in-out" />
+              class="project-image" />
           </div>
           <p class="text-xl">
-            Aplikasi manajemen keuangan pribadi dengan antarmuka glassmorphism
-            yang memungkinkan pengguna mengatur budget bulanan, mencatat
-            transaksi berdasarkan kategori, dan memantau status pembayaran
-            dengan sistem peringatan otomatis. Dilengkapi dengan dashboard
-            real-time yang menampilkan statistik pengeluaran dan sisa budget
-            dengan desain responsif modern.
+            A personal finance management application with a glassmorphism
+            interface that allows users to set monthly budgets, record
+            transactions by category, and monitor payment status with an
+            automatic alert system. Equipped with a real-time dashboard that
+            displays spending statistics and remaining budget with a modern
+            responsive design.
           </p>
-          <div class="mt-4 flex flex-col gap-4 sm:flex-row">
+          <div class="project-link-container">
             <a
               href="https://rizkyyullah.github.io/monthly-expense-tracker"
               target="_blank"
-              class="border-animus bg-primary text-shadow-animus text-main hover:bg-animus hover:text-main shadow-animus hover:text-shadow-primary rounded-sm border-2 px-4 py-2 text-[1rem] no-underline shadow-[0px_0px_8px_0px] transition-all duration-300 ease-in-out text-shadow-md hover:text-shadow-md"
+              class="project-link"
               >Live Demo</a
             >
             <a
               href="https://github.com/rizkyyullah/monthly-expense-tracker"
               target="_blank"
-              class="border-animus bg-primary text-shadow-animus text-main hover:bg-animus hover:text-main shadow-animus hover:text-shadow-primary rounded-sm border-2 px-4 py-2 text-[1rem] no-underline shadow-[0px_0px_8px_0px] transition-all duration-300 ease-in-out text-shadow-md hover:text-shadow-md"
+              class="project-link"
               >Source Code</a
             >
           </div>
         </div>
         <div
-          class="project-card bg-secondary border-accent relative overflow-hidden border-2 p-8 duration-300 ease-in-out before:absolute before:top-0 before:-left-full before:h-full before:w-full before:bg-linear-90 before:from-transparent before:via-[#c9aa711a] before:to-transparent before:transition-[left] before:duration-500 before:ease-in-out before:content-[''] hover:-translate-y-[5px] hover:before:left-full">
-          <h3 class="text-accent font-cinzel mb-4 text-2xl font-bold">
-            Project Athena (Digital Bookshelf Manager)
-          </h3>
-          <div
-            class="bg-rotate my-4 flex items-center justify-center sm:w-1/2 lg:w-3/4">
+          class="bg-secondary border-accent relative overflow-hidden border-2 p-8 duration-300 ease-in-out before:absolute before:top-0 before:-left-full before:h-full before:w-full before:bg-linear-90 before:from-transparent before:via-[#c9aa711a] before:to-transparent before:transition-[left] before:duration-500 before:ease-in-out before:content-[''] hover:-translate-y-[5px] hover:before:left-full">
+          <h3>Project Athena (Digital Bookshelf Manager)</h3>
+          <div class="project bg-rotate">
             <p class="text-secondary absolute z-[1] text-sm font-bold">
               Digital Bookshelf Manager Image
             </p>
             <img
               src="./public/assets/images/projects/2.jpg"
               alt="Digital Bookshelf Manager"
-              class="z-[2] cursor-pointer object-cover p-1 duration-300 ease-in-out" />
+              class="project-image" />
           </div>
           <p class="text-xl">
-            Platform manajemen koleksi buku digital dengan sistem rak virtual
-            yang memisahkan buku "belum selesai dibaca" dan "selesai dibaca"
-            secara otomatis. Menampilkan modal interaktif untuk edit/hapus buku,
-            fitur pencarian real-time, dan notifikasi yang elegan dengan desain
-            nuansa biru langit yang menenangkan.
+            A digital book collection management platform with a virtual
+            shelving system that separates "unread" and "read" books
+            automatically. Featuring interactive modal for book edit/delete,
+            real-time search feature, and elegant notifications with soothing
+            sky blue design.
           </p>
-          <div class="mt-4 flex flex-col gap-4 sm:flex-row">
+          <div class="project-link-container">
             <a
               href="https://rizkyyullah.github.io/bookshelf-app"
               target="_blank"
-              class="border-animus bg-primary text-shadow-animus text-main hover:bg-animus hover:text-main shadow-animus hover:text-shadow-primary rounded-sm border-2 px-4 py-2 text-[1rem] no-underline shadow-[0px_0px_8px_0px] transition-all duration-300 ease-in-out text-shadow-md hover:text-shadow-md"
+              class="project-link"
               >Live Demo</a
             >
             <a
               href="https://github.com/rizkyyullah/bookshelf-app"
               target="_blank"
-              class="border-animus bg-primary text-shadow-animus text-main hover:bg-animus hover:text-main shadow-animus hover:text-shadow-primary rounded-sm border-2 px-4 py-2 text-[1rem] no-underline shadow-[0px_0px_8px_0px] transition-all duration-300 ease-in-out text-shadow-md hover:text-shadow-md"
+              class="project-link"
               >Source Code</a
             >
           </div>
         </div>
         <div
-          class="project-card bg-secondary border-accent relative overflow-hidden border-2 p-8 duration-300 ease-in-out before:absolute before:top-0 before:-left-full before:h-full before:w-full before:bg-linear-90 before:from-transparent before:via-[#c9aa711a] before:to-transparent before:transition-[left] before:duration-500 before:ease-in-out before:content-[''] hover:-translate-y-[5px] hover:before:left-full">
-          <h3 class="text-accent font-cinzel mb-4 text-2xl font-bold">
-            Project Genesis (School Profile Website)
-          </h3>
-          <div
-            class="bg-rotate my-4 flex items-center justify-center sm:w-1/2 lg:w-3/4">
+          class="bg-secondary border-accent relative overflow-hidden border-2 p-8 duration-300 ease-in-out before:absolute before:top-0 before:-left-full before:h-full before:w-full before:bg-linear-90 before:from-transparent before:via-[#c9aa711a] before:to-transparent before:transition-[left] before:duration-500 before:ease-in-out before:content-[''] hover:-translate-y-[5px] hover:before:left-full">
+          <h3>Project Genesis (School Profile Website)</h3>
+          <div class="project bg-rotate">
             <p class="text-secondary absolute z-[1] text-sm font-bold">
               School Profil Website Image
             </p>
             <img
               src="./public/assets/images/projects/3.jpg"
               alt="Scholl Profile Website"
-              class="z-[2] cursor-pointer object-cover p-1 duration-300 ease-in-out" />
+              class="project-image" />
           </div>
           <p class="text-xl">
-            Website profil institusi pendidikan SMKN 5 Kabupaten Tangerang
-            dengan slideshow multimedia interaktif dan navigasi hamburger menu
-            responsif. Menyajikan informasi lengkap sejarah sekolah, 14
-            ekstrakurikuler, dan 10 konsentrasi keahlian dengan desain modern
-            yang mengutamakan pengalaman pengguna di berbagai perangkat.
+            Educational institution profile website of SMKN 5 Tangerang Regency
+            with interactive multimedia slideshow and responsive hamburger menu
+            navigation . Presents complete information on school history, 14
+            extracurricular activities, and 10 expertise concentrations with a
+            modern design that prioritises user experience on various devices.
           </p>
-          <div class="mt-4 flex flex-col gap-4 sm:flex-row">
+          <div class="project-link-container">
             <a
               href="https://rizkyyullah.github.io/submission-website-sekolah"
               target="_blank"
-              class="border-animus bg-primary text-shadow-animus text-main hover:bg-animus hover:text-main shadow-animus hover:text-shadow-primary rounded-sm border-2 px-4 py-2 text-[1rem] no-underline shadow-[0px_0px_8px_0px] transition-all duration-300 ease-in-out text-shadow-md hover:text-shadow-md"
+              class="project-link"
               >Live Demo</a
             >
             <a
               href="https://github.com/rizkyyullah/submission-website-sekolah"
               target="_blank"
-              class="border-animus bg-primary text-shadow-animus text-main hover:bg-animus hover:text-main shadow-animus hover:text-shadow-primary rounded-sm border-2 px-4 py-2 text-[1rem] no-underline shadow-[0px_0px_8px_0px] transition-all duration-300 ease-in-out text-shadow-md hover:text-shadow-md"
+              class="project-link"
               >Source Code</a
             >
           </div>
         </div>
         <div
-          class="project-card bg-secondary border-accent relative overflow-hidden border-2 p-8 duration-300 ease-in-out before:absolute before:top-0 before:-left-full before:h-full before:w-full before:bg-linear-90 before:from-transparent before:via-[#c9aa711a] before:to-transparent before:transition-[left] before:duration-500 before:ease-in-out before:content-[''] hover:-translate-y-[5px] hover:before:left-full">
-          <h3 class="text-accent font-cinzel mb-4 text-2xl font-bold">
-            Project Hermes (Payment Simulation API)
-          </h3>
-          <div
-            class="bg-rotate my-4 flex items-center justify-center sm:w-1/2 lg:w-3/4">
+          class="bg-secondary border-accent relative overflow-hidden border-2 p-8 duration-300 ease-in-out before:absolute before:top-0 before:-left-full before:h-full before:w-full before:bg-linear-90 before:from-transparent before:via-[#c9aa711a] before:to-transparent before:transition-[left] before:duration-500 before:ease-in-out before:content-[''] hover:-translate-y-[5px] hover:before:left-full">
+          <h3>Project Hermes (Payment Simulation API)</h3>
+          <div class="project bg-rotate">
             <p class="text-secondary absolute z-[1] text-sm font-bold">
               Payment Simulation API Image
             </p>
             <img
               src="./public/assets/images/projects/4.jpg"
               alt="Payment Simulation API"
-              class="z-[2] cursor-pointer object-cover p-1 duration-300 ease-in-out" />
+              class="project-image" />
           </div>
           <p class="text-xl">
-            RESTful payment gateway simulation dengan arsitektur clean code,
-            mendukung registrasi merchant/customer, manajemen produk, transaksi
-            real-time, dan sistem balance dengan PostgreSQL. Dilengkapi
-            autentikasi JWT, middleware logging, dan dokumentasi API yang
-            lengkap untuk simulasi ekosistem pembayaran digital.
+            RESTful payment gateway simulation with clean code architecture,
+            supports merchant/customer registration, product management,
+            real-time transactions, and balance system with PostgreSQL. Equipped
+            with JWT authentication, middleware logging, and complete API
+            documentation for digital payment ecosystem simulation.
           </p>
-          <div class="mt-4 flex flex-col gap-4 sm:flex-row">
+          <div class="project-link-container">
             <a
               href="https://github.com/rizkyyullah/pay-simple"
               target="_blank"
-              class="border-animus bg-primary text-shadow-animus text-main hover:bg-animus hover:text-main shadow-animus hover:text-shadow-primary rounded-sm border-2 px-4 py-2 text-[1rem] no-underline shadow-[0px_0px_8px_0px] transition-all duration-300 ease-in-out text-shadow-md hover:text-shadow-md"
+              class="project-link"
               >Source Code</a
             >
           </div>
@@ -349,6 +304,114 @@
       </div>
     </section>
 
-    <script src="./public/assets/script/index.js"></script>
+    <section id="skills">
+      <h2>Skills & Tools</h2>
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <div class="skill">
+          <img
+            src="public/assets/images/skills/html.webp"
+            alt="HTML"
+            class="w-12 md:w-20" />
+        </div>
+        <div class="skill">
+          <img
+            src="public/assets/images/skills/css.webp"
+            alt="CSS"
+            class="w-12 md:w-20" />
+        </div>
+        <div class="skill">
+          <img
+            src="public/assets/images/skills/javascript.webp"
+            alt="Javascript"
+            class="w-12 md:w-20" />
+        </div>
+        <div class="skill">
+          <img
+            src="public/assets/images/skills/tailwind.webp"
+            alt="Tailwind CSS"
+            class="w-12 md:w-20" />
+        </div>
+        <div class="skill">
+          <img
+            src="public/assets/images/skills/bootstrap.webp"
+            alt="Bootstrap"
+            class="w-12 md:w-20" />
+        </div>
+        <div class="skill">
+          <img
+            src="public/assets/images/skills/nodejs_2.webp"
+            alt="Node JS"
+            class="w-12 md:w-20" />
+        </div>
+        <div class="skill">
+          <img
+            src="public/assets/images/skills/express_2.webp"
+            alt="Express JS"
+            class="w-12 md:w-20" />
+        </div>
+        <div class="skill">
+          <img
+            src="public/assets/images/skills/react.webp"
+            alt="React JS"
+            class="w-12 md:w-20" />
+        </div>
+        <div class="skill">
+          <img
+            src="public/assets/images/skills/nextjs_2.webp"
+            alt="Next JS"
+            class="w-12 md:w-20" />
+        </div>
+        <div class="skill">
+          <img
+            src="public/assets/images/skills/aws_2.webp"
+            alt="Amazon Web Services (AWS)"
+            class="w-12 md:w-20" />
+        </div>
+        <div class="skill">
+          <img
+            src="public/assets/images/skills/go.webp"
+            alt="Go"
+            class="w-12 md:w-20" />
+        </div>
+        <div class="skill">
+          <img
+            src="public/assets/images/skills/gin.webp"
+            alt="Gin"
+            class="w-12 md:w-20" />
+        </div>
+        <div class="skill">
+          <img
+            src="public/assets/images/skills/hapi_2.webp"
+            alt="Hapi"
+            class="w-12 md:w-20" />
+        </div>
+        <div class="skill">
+          <img
+            src="public/assets/images/skills/mysql.webp"
+            alt="MySQL"
+            class="w-12 md:w-20" />
+        </div>
+        <div class="skill">
+          <img
+            src="public/assets/images/skills/postgresql.webp"
+            alt="PostgreSQL"
+            class="w-12 md:w-20" />
+        </div>
+        <div class="skill">
+          <img
+            src="public/assets/images/skills/redis.webp"
+            alt="Redis"
+            class="w-12 md:w-20" />
+        </div>
+        <div class="skill">
+          <img
+            src="public/assets/images/skills/rabbitmq.webp"
+            alt="Rabbit MQ"
+            class="w-12 md:w-20" />
+        </div>
+      </div>
+    </section>
+
+    <script src="./public/script/index.js"></script>
   </body>
 </html>

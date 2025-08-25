@@ -1,8 +1,9 @@
 {
   "name": "rizkyyullah.github.io",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
-    "start": "npx @tailwindcss/cli -i ./src/style.css -o ./public/assets/style/style.css --watch"
+    "start": "npx @tailwindcss/cli -i ./src/style.css -o ./public/style/style.css --watch"
   },
   "repository": {
     "type": "git",
@@ -13,7 +14,7 @@
     "HTML",
     "CSS",
     "JavaScript",
-    "Tailwindcss"
+    "Tailwind CSS"
   ],
   "author": "Muhamad Ali Rizkyyullah Ibnu Asy'ad",
   "license": "ISC",
