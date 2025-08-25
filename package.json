@@ -1,0 +1,32 @@
+{
+  "name": "rizkyyullah.github.io",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rizkyyullah/rizkyyullah.github.io.git"
+  },
+  "keywords": [
+    "Backend",
+    "Express",
+    "Node JS",
+    "Javascript"
+  ],
+  "author": "Muhamad Ali Rizkyyullah Ibnu Asy'ad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rizkyyullah/rizkyyullah.github.io/issues"
+  },
+  "homepage": "https://github.com/Rizkyyullah/rizkyyullah.github.io#readme",
+  "description": "This is a backend for my portfolio",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "nodemailer": "^7.0.5"
+  }
+}
