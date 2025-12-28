@@ -1,9 +1,10 @@
 {
   "name": "rizkyyullah.github.io",
   "version": "1.0.0",
+  "main": "./public/script/index.js",
   "type": "module",
   "scripts": {
-    "start": "npx @tailwindcss/cli -i ./src/style.css -o ./public/style/style.css --watch"
+    "start": "node setup-env.js && npx @tailwindcss/cli -i ./src/style.css -o ./public/style/style.css --watch"
   },
   "repository": {
     "type": "git",
@@ -25,10 +26,12 @@
   "description": "My new look Portfolio",
   "dependencies": {
     "@tailwindcss/cli": "^4.1.11",
+    "dotenv": "^17.2.1",
     "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
     "prettier": "^3.6.2",
-    "prettier-plugin-tailwindcss": "^0.6.14"
+    "prettier-plugin-tailwindcss": "^0.6.14",
+    "vite": "^7.1.3"
   }
 }

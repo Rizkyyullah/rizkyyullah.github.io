@@ -1,0 +1,224 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-primary: #1a1a1aff;
+  --color-secondary: #2a2a2a;
+  --color-accent: #c9aa71;
+  --color-main: #e8e8e8;
+  --color-animus: #4a9eff;
+  --color-blood: #8b0000;
+
+  --font-crimson-text: 'Crimson Text', serif;
+  --font-cinzel: 'Cinzel', serif;
+
+  --animate-animusGlow: animusGlow 2s ease-in-out infinite alternate;
+  --animate-glitch: glitch 2s linear infinite;
+  --animate-glitch-2: glitch-2 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both
+    infinite;
+  --animate-glitch-3: glitch-3 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both
+    infinite;
+}
+
+@layer components {
+  #alertOverlay.show {
+    @apply visible opacity-100;
+  }
+
+  #alertOverlay.show #alertBox {
+    @apply scale-100;
+  }
+
+  section:nth-of-type(n + 3) {
+    @apply mx-auto max-w-[1200px] px-4 py-20 md:px-8;
+  }
+
+  h2 {
+    @apply font-cinzel text-accent after:bg-accent relative mb-12 text-center text-3xl font-bold after:absolute after:-bottom-2.5 after:left-2/4 after:h-0.5 after:w-[100px] after:-translate-x-2/4 after:content-[''] md:text-5xl;
+  }
+
+  h3 {
+    @apply text-accent font-cinzel text-2xl font-bold;
+  }
+
+  label {
+    @apply text-accent mb-2;
+  }
+
+  input,
+  textarea {
+    @apply bg-secondary border-accent text-main focus:border-animus rounded-md border p-3 transition-all duration-300 focus:shadow-[0_0_10px_rgba(74,158,255,0.3)] focus:outline-none;
+  }
+
+  footer {
+    @apply bg-secondary border-accent border-t-2 px-0 py-8 text-center;
+  }
+
+  .nav-link {
+    @apply text-main font-cinzel hover:text-accent after:bg-accent relative text-[.8rem] tracking-tight transition-[color] duration-300 ease-in-out after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:transition-[width] after:duration-300 after:ease-in-out after:content-[''] hover:after:w-full lg:text-[1rem];
+  }
+
+  .project,
+  .certificate-image-container {
+    @apply my-4 flex items-center justify-center sm:w-1/2 lg:w-4/5;
+  }
+
+  .project-image,
+  .certificate-image {
+    @apply z-[2] cursor-pointer object-cover p-1 duration-300 ease-in-out;
+  }
+
+  .project-link-container {
+    @apply mt-4 flex flex-col gap-4 sm:flex-row;
+  }
+
+  .project-link,
+  .certificate-link {
+    @apply border-animus bg-primary text-shadow-animus text-main hover:bg-animus hover:text-main shadow-animus hover:text-shadow-primary rounded-sm border-2 px-4 py-2 text-[1rem] no-underline shadow-[0px_0px_8px_0px] transition-all duration-300 ease-in-out text-shadow-md hover:text-shadow-md;
+  }
+
+  .skill {
+    @apply bg-secondary border-accent relative overflow-hidden rounded-full border-2 p-3 duration-300 ease-in-out before:absolute before:top-0 before:-left-full before:h-full before:w-full before:bg-linear-90 before:from-transparent before:via-[#c9aa711a] before:to-transparent before:transition-[left] before:duration-500 before:ease-in-out before:content-[''] hover:-translate-y-[5px] hover:before:left-full;
+  }
+
+  .certificate,
+  .testimonial {
+    @apply bg-secondary border-accent border-2 p-8 transition-transform duration-300 ease-in-out hover:-translate-y-1.5;
+  }
+
+  .certificate-link {
+    @apply mt-4 inline-block;
+  }
+
+  .alert-success .alert-icon {
+    @apply text-[#4caf50];
+  }
+
+  .alert-error .alert-icon {
+    @apply text-[#f44336];
+  }
+
+  .alert-btn {
+    @apply cursor-pointer rounded-xl px-5 py-2.5 font-semibold shadow-[0_4px_12px_rgba(0,0,0,0.2)] transition-all duration-300 ease-in-out hover:-translate-y-0.5;
+  }
+
+  .pulse {
+    @apply animate-pulse duration-600 ease-in-out;
+  }
+
+  .contact-item {
+    @apply flex items-center gap-4;
+  }
+
+  .social-link {
+    @apply text-accent hover:text-animus text-2xl transition-colors duration-300 ease-in-out;
+  }
+}
+
+@keyframes animusGlow {
+  0% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1s;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes glitch {
+  2%,
+  64% {
+    transform: translate(2px, 0) skew(0deg);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+  62% {
+    transform: translate(0, 0) skew(5deg);
+  }
+}
+
+@keyframes glitch-2 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes glitch-3 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(2px, -2px);
+  }
+  40% {
+    transform: translate(2px, 2px);
+  }
+  60% {
+    transform: translate(-2px, -2px);
+  }
+  80% {
+    transform: translate(-2px, 2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+#home {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><rect width="1920" height="1080" fill="%23111"/><g opacity="0.3"><circle cx="960" cy="540" r="400" fill="none" stroke="%23c9aa71" stroke-width="5"/><circle cx="960" cy="540" r="300" fill="none" stroke="%23c9aa71" stroke-width="5"/><circle cx="960" cy="540" r="200" fill="none" stroke="%23c9aa71" stroke-width="5"/></g></svg>');
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-rotate {
+  background: linear-gradient(
+    90deg,
+    var(--color-accent),
+    var(--color-animus),
+    var(--color-accent)
+  );
+  background-size: 200% 200%;
+  transition: background-position 0.3s ease-in-out;
+}
+
+.bg-rotate:hover {
+  background-position: 100% 100%;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

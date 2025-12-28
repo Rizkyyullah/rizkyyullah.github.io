@@ -1,0 +1,1 @@
+const API_LINK = () => 'https://portfolio-api-deployment.up.railway.app/send-email';
