@@ -1,32 +1,17 @@
 {
-  "name": "rizkyyullah.github.io",
+  "name": "rizkyyullah-portfolio-api",
   "version": "1.0.0",
-  "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "node --watch server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Rizkyyullah/rizkyyullah.github.io.git"
-  },
-  "keywords": [
-    "Backend",
-    "Express",
-    "Node JS",
-    "Javascript"
-  ],
-  "author": "Muhamad Ali Rizkyyullah Ibnu Asy'ad",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Rizkyyullah/rizkyyullah.github.io/issues"
-  },
-  "homepage": "https://github.com/Rizkyyullah/rizkyyullah.github.io#readme",
-  "description": "This is a backend for my portfolio",
   "dependencies": {
-    "body-parser": "^2.2.0",
-    "dotenv": "^17.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
     "express": "^5.1.0",
-    "nodemailer": "^7.0.5"
+    "mongodb": "^6.17.0",
+    "resend": "^4.7.0",
+    "zod": "^3.25.0"
   }
 }
