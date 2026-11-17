@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
+    "start": "node dist/server.js",
     "dev": "node --watch server.js",
     "build": "esbuild server.js --bundle --platform=node --target=node20 --outfile=dist/server.js --packages=external"
   },
